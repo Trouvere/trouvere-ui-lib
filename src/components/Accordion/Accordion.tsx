@@ -19,6 +19,7 @@ export const Accordion: FC<AccordionProps> = ({
   const [isOpenState, setIsOpenState] = useState(false)
 
   const onToggle = (): void => {
+    console.log("lk")
     if (innerControl) {
       setIsOpenState((prevIsOpen) => !prevIsOpen)
     } else {

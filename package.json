@@ -12,7 +12,9 @@
   ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "storybook": "storybook dev -p 6006 --debug-webpack",
+    "build-storybook": "storybook build"
   },
   "repository": {
     "type": "git",
@@ -26,9 +28,20 @@
   },
   "homepage": "https://github.com/Trouvere/trouvere-ui-lib#readme",
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.5.0",
     "@rollup/plugin-terser": "^0.3.0",
     "@rollup/plugin-typescript": "^11.0.0",
     "@rollup/plugin-url": "^8.0.1",
+    "@storybook/addon-essentials": "^8.1.6",
+    "@storybook/addon-interactions": "^8.1.6",
+    "@storybook/addon-links": "^8.1.6",
+    "@storybook/addon-onboarding": "^8.1.6",
+    "@storybook/addon-styling-webpack": "^1.0.0",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.3",
+    "@storybook/blocks": "^8.1.6",
+    "@storybook/react": "^8.1.6",
+    "@storybook/react-webpack5": "^8.1.6",
+    "@storybook/test": "^8.1.6",
     "@svgr/rollup": "^6.5.1",
     "@types/react": "^18.0.27",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
@@ -39,10 +52,13 @@
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-storybook": "^0.8.0",
     "node-sass": "^8.0.0",
     "rollup": "^3.10.1",
     "rollup-plugin-dts": "^5.1.1",
     "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^8.1.6",
+    "storybook-css-modules": "^1.0.8",
     "typescript": "^4.9.4"
   },
   "dependencies": {
