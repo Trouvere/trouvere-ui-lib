@@ -15,4 +15,3 @@ const createIcon = (Icon: FC<IconProps>): FC<IconProps> => (props: IconProps) =>
 export const CheckIcon = createIcon(CheckIconComponent)
 export const QuestionMarkIcon = createIcon(QuestionMarkIconComponent)
 export const UserIcon = createIcon(UserIconComponent)
-ё
