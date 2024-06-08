@@ -2,17 +2,13 @@ module.exports = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
 
   addons: [
+    "@storybook/addon-onboarding",
     "@storybook/addon-links",
     "@storybook/addon-essentials",
+    "@chromatic-com/storybook",
     "@storybook/addon-interactions",
-    '@storybook/preset-scss',
-    "@storybook/addon-webpack5-compiler-babel",
-    "@chromatic-com/storybook"
   ],
 
-  core: {
-    builder: "webpack5"
-  },
 
   webpackFinal: (config) => {
     config.resolve.modules = [...(config.resolve.modules || []), "./src"];

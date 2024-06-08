@@ -1,0 +1,27 @@
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR! 
+npm ERR! While resolving: @trouvere/trouvere-ui-lib@1.0.2
+npm ERR! Found: react@17.0.2
+npm ERR! node_modules/react
+npm ERR!   react@"^17.0.2" from the root project
+npm ERR!   peer react@"^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta" from @storybook/react-webpack5@8.1.6
+npm ERR!   node_modules/@storybook/react-webpack5
+npm ERR!     dev @storybook/react-webpack5@"8.1.6" from the root project
+npm ERR! 
+npm ERR! Could not resolve dependency:
+npm ERR! peer react@"^18.3.1" from react-dom@18.3.1
+npm ERR! node_modules/react-dom
+npm ERR!   peer react-dom@"^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta" from @storybook/react-webpack5@8.1.6
+npm ERR!   node_modules/@storybook/react-webpack5
+npm ERR!     dev @storybook/react-webpack5@"8.1.6" from the root project
+npm ERR! 
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR! 
+npm ERR! 
+npm ERR! For a full report see:
+npm ERR! C:\Users\a.mishyn\AppData\Local\npm-cache\_logs\2024-06-08T18_16_16_741Z-eresolve-report.txt
+
+npm ERR! A complete log of this run can be found in: C:\Users\a.mishyn\AppData\Local\npm-cache\_logs\2024-06-08T18_16_16_741Z-debug-0.log
