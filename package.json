@@ -13,10 +13,11 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6007",
     "build-storybook": "storybook build",
     "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static",
-    "test": "jest -c jest.config.js --coverage"
+    "test": "jest -c jest.config.js --coverage",
+    "lint": "npx eslint ./src"
   },
   "repository": {
     "type": "git",
