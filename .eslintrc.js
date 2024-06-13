@@ -14,6 +14,7 @@ module.exports = {
         sourceType: 'module',
     },
     extends: [
+        'plugin:prettier/recommended',
         'plugin:react/recommended',
         'standard-with-typescript',
         'plugin:storybook/recommended',
@@ -28,10 +29,26 @@ module.exports = {
             parserOptions: {
                 project: ['./tsconfig.json'],
             },
+            rules: {
+                '@typescript-eslint/member-delimiter-style': [
+                    'error',
+                    {
+                        multiline: {
+                            delimiter: 'semi',
+                            requireLast: true,
+                        },
+                        singleline: {
+                            delimiter: 'semi',
+                            requireLast: false,
+                        },
+                    },
+                ],
+            },
         },
     ],
-    plugins: ['react'],
+    plugins: ['simple-import-sort', 'react'],
     rules: {
+        'eslintprettier/prettier': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
         'react/display-name': 'off',
         '@typescript-eslint/strict-boolean-expressions': 'off',
@@ -45,6 +62,7 @@ module.exports = {
 
         'no-unexpected-multiline': 'error',
         'comma-dangle': ['error', 'always-multiline'],
+        '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
         'linebreak-style': ['error', 'unix'],
         'no-plusplus': 0,
 
@@ -67,5 +85,9 @@ module.exports = {
         'react/function-component-definition': 0,
         'import/no-extraneous-dependencies': 0,
         'object-curly-spacing': ['error', 'never'],
+        '@typescript-eslint/object-curly-spacing': ['error', 'never'],
+        'space-before-function-paren': 'off',
+        '@typescript-eslint/space-before-function-paren': 'off',
+        'multiline-ternary': 0,
     },
 };

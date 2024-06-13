@@ -1,21 +1,20 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Button, ButtonProps } from "./Button";
-import React from "react";
-import { useArgs } from "@storybook/preview-api";
+import type {Meta, StoryObj} from '@storybook/react';
+
+import {Button} from './Button';
 
 // Metadata for the Button component
 const meta: Meta<typeof Button> = {
-  title: "components/Button",
-  component: Button,
-  args: {
-    title: "My title",
-    children: "Content",
-  },
-  parameters: {
-    controls: {
-      exclude: ["innerControl", "onToggle", "isOpen"],
+    title: 'components/Button',
+    component: Button,
+    args: {
+        title: 'My title',
+        children: 'Content',
     },
-  },
+    parameters: {
+        controls: {
+            exclude: ['innerControl', 'onToggle', 'isOpen'],
+        },
+    },
 };
 
 export default meta;
@@ -25,10 +24,7 @@ type Story = StoryObj<typeof Button>;
 
 // Template for the default Button variant
 export const Default: Story = {
-  args: {
-    isOpen: false,
-  },
+    args: {
+        isOpen: false,
+    },
 };
-
-
-
